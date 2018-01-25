@@ -1,0 +1,49 @@
+When would you want to use a remote repository rather than keeping all your work
+local?
+
+    When a big enough change has been made or when finishing a round of work on
+    a project
+
+Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+    Some times while working on stuff, you know that there is a stable version 
+    for it on GitHub, while you work on some new feature or repair some bugs that
+    doesn't require their on branch but also may cause some trouble.
+    Also when working on collaborative projects.
+
+Describe the differences between forks, clones, and branches.  When would you
+use one instead of another?
+
+    Forks: Clones inside github and lets update to that clone
+    Clones: Is a copy of a repository, can be on a local machine or online
+    Branch: Another version of a code, maybe to add an experimental new feature    
+
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+    Benefit is in being up-to-date for new changes or improvements being 
+    added. And also it is easier to commit your changes to remote repository 
+    if your local copy is more updated.  
+
+How would you collaborate without using Git or GitHub?  What would be easier,
+and what would be harder?
+
+    Maybe through Dropbox, Drive or Mega. But then the files
+    will keep conflicting when saving them, and there wouldn't exist things
+    like the pull requests or even the commits themselves.
+    Would be harder to access older changes on the code, also merging new code,
+    things like the pull requests and that sort of kind.
+    I don't see what would be easier.
+    
+
+When would you want to make changes in a separate branch rather than directly in
+master?  What benefits does each approach have?
+
+    Changes needed to be implemented in the seperate branch rather directly in master so as 
+    not to break the master branch code or access the master branch code directly. This can 
+    happen if there is a collaboration in the project where the changes by the group
+    members need to be first gone through before they are commited on the master branch.
+    Benefits of changing in seperate branch is collaboration is done in a proper way. Directly 
+    changing the master branch is beneficial if there is no group co-ordination required 
+    i.e if a single person is working on the same.     

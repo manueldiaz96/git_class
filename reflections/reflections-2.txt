@@ -1,0 +1,59 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+    When you initialize a repository, you begin to keep track of all the files
+    you add to it, this is needed because Git doesn't do it for you, which is 
+    good, but you'll have to be careful of just creating the repositories you'll
+    need.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+    The staging area is an intermediate section in which files are added before
+    making a commit.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+    Before committing, the staging area can be used to see which changes are 
+    going to be commited, so then committing different logical changes into 
+    different commits
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+    Work on conflicting changes, trying out new features, large code refactoring 
+    etc.
+    This gives the possibility to change everything with multiple commits into 
+    the "feature branch" and then do a large merge to the "main branch".
+    This will keep the history clean, but you can still use version control 
+    during development.
+
+
+How do the diagrams help you visualize the branch structure?
+
+    It helps because it is easier to understand a visual representation of the
+    commit history, to do any task and to locate easily any commit or branch that
+    it's needed at eny given time.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+    Merging two branches together makes possible to add features that were in 
+    branches to the principal version of the program. It is represented like
+    that because it has a tree-like similarity.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+    
+    Pros:
+	- In some big changes or collaborative work, it is possible to not
+	  waste time on sitting with another person to review changes.
+
+	- Less time adding new features.
+
+
+    Cons:
+	- As always, you will rely on the user, and as humans, we can fail. So
+	  it can happen that something else that isn't described on the commit 
+	  comment, can be into the code and without knowing, the merge could 
+	  introduce bugs.
