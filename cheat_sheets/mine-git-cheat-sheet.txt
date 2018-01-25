@@ -1,0 +1,73 @@
+Note: When a DETACHED HEAD statement is shown, just create a new branch, merge it with master and
+
+
+delete said branch.
+
+-----------------------------------------------------------------------------------------------------
+git init -  Create an empty Git repository or reinitialize an existing one
+
+git log  -  fetches the log of all commits
+
+
+git log --graph --oneline branch_a branch_b  -  visual representation of the commit history
+
+
+git diff  -  (WITHOUT ARGUMENTS) shows differences between staging area and working directory
+
+git diff --staged  -  shows differences between staging area and the most recent commit
+
+
+
+git diff a b  -  shows differences between commit a (old) and commit b (new)
+
+
+
+git checkout a  -  restores commit a as the main commit
+
+
+git checkout branchName  -  Makes 'branchName' the current HEAD
+
+git add a  -  adds file or directory 'a' to the staging area
+
+git commit  -  commits changes, prompting a comment for said commit
+
+git clone a  -  clones a repository to the current location. Can be online or from the local machine.
+
+
+
+git reset HEAD -- <a>  -  removes a file or a directory from the staging area of a commit
+
+
+git reset --hard  -  removes all files or directories from the staging area of a commit
+
+
+git branch  -  shows all current local branches, the star (*) next to a name is the current checked out branch
+
+git branch -a -  shows both local and remote branches
+
+git branch a -  creates a new branch called 'a' for the repository
+
+git branch -d a  -  deletes the 'a' branch, usually used after a merge
+
+git merge master branch_name  -  merges two branches into a new master branch
+
+git merge branch2 branch3  -  will add branch2 and branch3 to the current checked out branch
+
+git show a  -  shows the changes introduced by commit 'a'
+
+git remote  -  shows a list of the remotes this project has
+
+git remote add remote_name url  -  creates a remote named 'remote_name' to be stored in the url
+
+git remote rm remote_name  -  removes remote_name from the remotes list
+
+git remote rename old_name new_name  -  changes the name of a remote 
+
+git fetch remote_name  -  creates a branch of the current remote status from the last common commit 
+
+git pull remote branch  -  refreshes the current with the latest pushed branch
+
+git push remote branch  -  uploads the current branch to the remote
+
+
+
