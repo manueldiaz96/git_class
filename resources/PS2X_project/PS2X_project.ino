@@ -96,20 +96,16 @@ void loop() {
       Serial.println("Start is being held");     
 
     if(ps2x.Button(PSB_PAD_UP)) {      //will be TRUE as long as button is pressed
-      Serial.print("Up held this hard: ");
-      Serial.println(ps2x.Analog(PSAB_PAD_UP), DEC);
+      adelante();
     }
     if(ps2x.Button(PSB_PAD_RIGHT)){
-      Serial.print("Right held this hard: ");
-      Serial.println(ps2x.Analog(PSAB_PAD_RIGHT), DEC);
+      giroDer();
     }
     if(ps2x.Button(PSB_PAD_LEFT)){
-      Serial.print("LEFT held this hard: ");
-      Serial.println(ps2x.Analog(PSAB_PAD_LEFT), DEC);
+      giroIzq();
     }
     if(ps2x.Button(PSB_PAD_DOWN)){
-      Serial.print("DOWN held this hard: ");
-      Serial.println(ps2x.Analog(PSAB_PAD_DOWN), DEC);
+      parar();
     }   
 
     vibrate = ps2x.Analog(PSAB_CROSS);  //this will set the large motor vibrate speed based on how hard you press the blue (X) button
