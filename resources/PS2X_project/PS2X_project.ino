@@ -20,6 +20,14 @@ int error = 0;
 byte type = 0;
 byte vibrate = 0;
 
+//Variables to work with H-bridge
+int E1 = 5;
+int M1 = 4;
+int E2 = 6;
+int M2 = 7;
+int valueI = 250;
+int valueD = 250;
+
 void setup() {
 
   Serial.begin(57600);
@@ -171,4 +179,70 @@ void loop() {
     }     
   }
   delay(50);  
+}
+
+void adelante() {
+  valueI = 170;
+  valueD = 190;
+  digitalWrite(M1, LOW);
+  analogWrite(E1, valueI);
+  digitalWrite(M2, LOW);
+  analogWrite(E2, valueD);
+  delay(850);
+  digitalWrite(M1, LOW);
+  analogWrite(E1, 0);
+  delay(50);
+  digitalWrite(M2, LOW);
+  analogWrite(E2, 0);
+  delay(500);
+}
+
+void giroIzq() {
+  valueI = 250;
+  valueD = 250;
+  digitalWrite(M1, HIGH);
+  analogWrite(E1, valueI);
+  digitalWrite(M2, LOW);
+  analogWrite(E2, valueD);
+  delay(200);
+  digitalWrite(M1, LOW);
+  analogWrite(E1, 0);
+  delay(50);
+  digitalWrite(M2, LOW);
+  analogWrite(E2, 0);
+  delay(500);
+  adelanteGiro();
+}
+
+void giroDer() {
+  valueI = 250;
+  valueD = 250;
+  digitalWrite(M1, LOW);
+  analogWrite(E1, valueI);
+  digitalWrite(M2, HIGH);
+  analogWrite(E2, valueD);
+  delay(250);
+  digitalWrite(M1, LOW);
+  analogWrite(E1, 0);
+  delay(50);
+  digitalWrite(M2, LOW);
+  analogWrite(E2, 0);
+  delay(500);
+  adelanteGiro();
+}
+
+void adelanteGiro() {
+  valueI = 170;
+  valueD = 190;
+  digitalWrite(M1, LOW);
+  analogWrite(E1, valueI);
+  digitalWrite(M2, LOW);
+  analogWrite(E2, valueD);
+  delay(200);
+  digitalWrite(M1, LOW);
+  analogWrite(E1, 0);
+  delay(50);
+  digitalWrite(M2, LOW);
+  analogWrite(E2, 0);
+  delay(500);
 }
