@@ -69,5 +69,8 @@ git pull remote branch  -  refreshes the current with the latest pushed branch
 
 git push remote branch  -  uploads the current branch to the remote
 
+git tag <name>  -  creates a name (reference) for an specific commit
+
+git tag -d <name>  -  removes tag reference
 
 
