@@ -20,7 +20,7 @@ Recommendations:
 * Check the option for using Git from the CMD, but also installing the bash.
 * Install it with nano, **NOT VIM**
 
-** If you aren't completily sure when installing it, be at the first session early, so I can guide you through the installation. **
+**If you aren't completely sure when installing it, be at the first session early, so I can guide you through the installation.**
 
 # Credential managers (really useful)
 
