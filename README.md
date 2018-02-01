@@ -22,6 +22,8 @@ Recommendations:
 
 **If you aren't completely sure when installing it, be at the first session early, so I can guide you through the installation.**
 
+---
+
 # Credential managers (really useful)
 
 ## Gnome-keyring manager (UBUNTU ONLY):
