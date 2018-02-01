@@ -24,11 +24,11 @@ Recommendations:
 
 # Credential managers (really useful)
 
-## Gnome-keyring manager:
+## Gnome-keyring manager (UBUNTU ONLY):
 
-[(UBUNTU ONLY) Read this issue once you have Git installed](https://stackoverflow.com/questions/13385690/how-to-use-git-with-gnome-keyring-integration)
+[Read this issue once you have Git installed](https://stackoverflow.com/questions/13385690/how-to-use-git-with-gnome-keyring-integration)
 
-## Credential manager
+## Credential manager (WINDOWS ONLY):
 
 On the git bash shell:
 
